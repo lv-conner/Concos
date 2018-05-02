@@ -40,6 +40,7 @@ namespace Concos.Logging.Extension.FileLogger
         private void Reload(FileLoggerOptions options)
         {
             _options = options;
+            _loggers.Clear();
         }
         private FileLogger CreateLoggerImplement(string name)
         {
