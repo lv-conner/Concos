@@ -9,7 +9,7 @@ namespace Concos.Logging.Extension.FileLogger
         private string _logFileExtension;
         private string _logfilePath;
 
-        public string LogFileExtension { get => _logFileExtension; set { if (!value.StartsWith("."){ value += "."; } _logFileExtension = value; } }
+        public string LogFileExtension { get => _logFileExtension; set { if (!value.StartsWith(".")) { value += "."; } _logFileExtension = value; } }
         public string LogfilePath { get => _logfilePath; set => _logfilePath = value; }
         public FileLoggerOptions()
         {
