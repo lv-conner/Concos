@@ -18,6 +18,7 @@ namespace Concos.Logging.Extension.FileLogger
             _catalogName = catalogName;
             _filter = filter;
             _options = options ?? new FileLoggerOptions();
+            EnsurePath();
             _logFilePath = GenerateFilePath();
         }
         private void EnsurePath()
